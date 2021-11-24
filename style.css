@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+}
+
+.card-header {
+  height: 200px;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.card-title {
+  height: 20px;
+  margin: 0;
+}
+
+.card-excerpt {
+  color: #777;
+  margin: 10px 0 20px;
+}
+
+.author {
+  display: flex;
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 15px;
+  width: 150px;
+}
+
+.author-info small {
+  color: #aaa;
+  margin-top: -20px;
+}
+
+.subscription {
+  margin-top: 16px;
+}
+
+button {
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribed {
+  padding: 5px 6px;
+  background-color: rgb(132, 192, 158);
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
